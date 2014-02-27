@@ -1,0 +1,16 @@
+{
+  "name": "language-sml",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Standard ML language support for Atom",
+  "repository": "https://github.com/Jakehp/language-sml",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  },
+  "bugs": {
+    "url": "https://github.com/Jakehp/language-sml/issues"
+  }
+}

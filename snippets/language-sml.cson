@@ -1,0 +1,23 @@
+'.source.ml':
+  'Base Functor':
+    'prefix': 'functor'
+    'body': 'functor $1($2) : $3 =\nstruct\n\t$4\nend'
+  'Base Funsig':
+    'prefix': 'fs'
+    'body': 'funsig $1 ($2) =\nsig\n\t$3\nend'
+  'Base Structure':
+    'prefix': 'struct'
+    'body': 'structure $1 =\nstruct\n\t$2\nend'
+  'RedBlackMap':
+    'prefix': 'rbm'
+    'body': 'structure ${1:Map} = RedBlackMapFn(struct\n                                          type ord_key = $2\n                                          val compare = $3\n                                    end)'
+  'RedBlackSet':
+    'prefix': 'rbs'
+    'body': 'structure ${1:Set} = RedBlackSetFn (struct\n                                           type ord_key = $2\n\t\t\t\t\t\t\t\t\t val compare = $3\n                                    end)\n'
+  'itos':
+    'prefix': 'itos'
+    'body': 'Int.toString $1'
+'.source.ml, .source.sig':
+  'Base Signature':
+    'prefix': 'sig'
+    'body': 'signature $1 =\nsig\n\t$2\nend'
