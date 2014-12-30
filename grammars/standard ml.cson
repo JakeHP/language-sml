@@ -113,7 +113,7 @@
     'name': 'constant.language.ml'
   }
   {
-    'begin': '\\s*(type|eqtype) .* ='
+    'begin': '\\b(type|eqtype) .* ='
     'captures':
       '1':
         'name': 'keyword.other.typeabbrev.ml'
