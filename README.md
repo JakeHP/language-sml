@@ -7,3 +7,6 @@ from the [standard-ml.tmbundle](https://github.com/textmate/standard-ml.tmbundle
 
 Contributions are greatly appreciated. Please fork this repository and open a
 pull request to add snippets, make grammar tweaks, etc.
+
+Contributors:
+[j-baker](https://github.com/j-baker)
