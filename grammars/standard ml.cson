@@ -1,6 +1,7 @@
 'fileTypes': [
   'sml'
   'sig'
+  'fun'
 ]
 'name': 'Standard ML'
 'patterns': [
