@@ -9,7 +9,7 @@
     'include': '#comments'
   }
   {
-    'match': '\\b(val|datatype|struct|as|let|in|abstype|local|where|case|of|fn|raise|exception|handle|ref|infix|infixr|before|end|structure|withtype)\\b'
+    'match': '\\b(val|datatype|signature|type|op|sharing|struct|as|let|in|abstype|local|where|case|of|fn|raise|exception|handle|ref|infix|infixr|before|end|structure|withtype)\\b'
     'name': 'keyword.other.ml'
   }
   {
