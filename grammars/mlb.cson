@@ -1,0 +1,54 @@
+'comment': 'The ML Basis system extends Standard ML to support programming-in-the-very-large,
+            namespace management at the module level, separate delivery of library sources, and more.'
+'fileTypes': [
+  'mlb'
+]
+'name': 'Standard ML - MLB'
+'patterns': [
+  {
+    'begin': '\\(\\*'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.begin.ml'
+    'end': '\\*\\)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.end.ml'
+    'name': 'comment.block.mlb'
+  }
+  {
+    'begin': '(structure|signature|functor)'
+    'match': ' ([0-9a-zA-Z\_]+)\\b'
+    'name': 'string.name'
+  }
+  {
+    'match': '\\b(local|in|end|and|basis|open|ann|bas|let|structure|signature|functor)\\b'
+    'name': 'keyword.other.mlb'
+  }
+  {
+    'match': '.*\\.(sml|mlb|sig|fun)\\b'
+    'name': 'constant.smlfile.mlb'
+  }
+  {
+    'begin': '^\\s*(#(if).*)'
+    'captures':
+      '1':
+        'name': 'meta.preprocessor.mlb'
+      '2':
+        'name': 'keyword.control.import.if.mlb'
+    'end': '^\\s*(#(endif))'
+    'name': 'meta.directive.mlb'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.quoted.double.mlb'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.mlb'
+      }
+    ]
+  }
+]
+'scopeName': 'source.mlb'
